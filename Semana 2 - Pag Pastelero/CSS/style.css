@@ -1,0 +1,68 @@
+:root {
+  --titulos: #f68989;
+  --fondo: #f6e7d8;
+  --secundario: #C65D7B;
+  ---blanco: #fff;
+}
+
+/*Incico de box-sizing       -     Elemental para cada proyecto */
+/*Funciona para mwjorar el metodo de la caja(al tener un margin, si agregamos un padding, este no afectara el tamaño)*/
+html {
+  box-sizing: border-box;
+  /*esto es parte del box-sizing pero funciona para que 1 rem sea igual a 10px*/
+  font-size: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.titulo {
+  display: flex;
+  background-color: var(--secundario);
+  color: black;
+  font-size: 25px;
+}
+
+.principal{
+text-align: center;
+}
+body {
+  background-color: var(--fondo);
+}
+h2 {
+  display: block;
+  background-color: var(--titulos);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0%;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.tablas {
+  text-align: center;
+  display: list-item;
+}
+
+p {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin:0%;
+  padding: 1rem;
+    font-size: 2rem;
+  background-color: var(--secundario);
+}

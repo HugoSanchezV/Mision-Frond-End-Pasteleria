@@ -1,0 +1,58 @@
+:root {
+  --secuandario: #f68989;
+  --fondo: #f6e7d8;
+  --titulos: #C65D7B;
+  ---blanco: #fff;
+}
+  /*Incico de box-sizing       -     Elemental para cada proyecto */
+  /*Funciona para mwjorar el metodo de la caja(al tener un margin, si agregamos un padding, este no afectara el tamaño)*/
+  html {
+    box-sizing: border-box;
+    /*esto es parte del box-sizing pero funciona para que 1 rem sea igual a 10px*/
+    font-size: 100%;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    background-color: var(--fondo);
+  }
+
+.cabecera,
+.footer{
+  text-align: center;
+  display: list-item;
+  background-color: var(--titulos);
+  margin: auto;
+  padding: 1rem;
+
+}
+.btn{
+  background-color: var(--titulos);
+  border-color: var(--secuandario);
+}
+.sub{
+  margin-top: 10rem;
+}
+h2{
+  padding: 1rem;
+  margin: auto;
+  background-color: var(--secuandario);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 80%;
+    max-height: 80%;
+   }
+   .grid {
+     margin: auto;
+     margin-bottom: 4rem;
+    height: 300px;
+    width: 470px;
+   }
+
